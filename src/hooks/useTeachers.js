@@ -4,7 +4,7 @@ import { supabase } from '../services/supabase'
 export function useTeachers(filters = {}) {
   const [teachers, setTeachers] = useState([])
   const [loading, setLoading] = useState(true)
-
+ 
   useEffect(() => {
     async function fetchTeachers() {
       setLoading(true)
